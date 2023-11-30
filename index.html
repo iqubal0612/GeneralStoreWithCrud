@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Stores Dashboard</title>
+</head>
+<body>
+    <form onsubmit="saveToCrud(event)">
+        <label>Item Name :</label>
+        <input type="text" name="itemName" id="itemName" placeholder="enter item name">
+        <label>Description :</label>
+        <input type="text" name="desc" id="description" placeholder="enter description">
+        <label>Price :</label>
+        <input type="number" name="price" id="description" placeholder="enter price">
+        <label>Quantity :</label>
+        <input type="number" name="quantity" id="description" placeholder="enter Quantity">
+        <button id="addBtn">Add Item</button>
+    </form>
+    <ul id="listOfItems"></ul>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="app.js"></script>
+
+</html>
